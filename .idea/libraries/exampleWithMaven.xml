@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="exampleWithMaven">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/exampleWithMaven" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/exampleWithMaven/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
