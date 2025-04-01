@@ -1,4 +1,4 @@
-package com.nettyex01;
+package com.netty.ex01;
 
 import java.nio.charset.Charset;
 
