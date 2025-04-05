@@ -1,16 +1,19 @@
-package com.netty.ex01;
+package com.netty.ex04;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.*;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelPipeline;
+import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
-public class EchoServer {
+public class EchoServerV2 {
 
     private int port;
 
-    public EchoServer(int port) {
+    public EchoServerV2(int port) {
         this.port = port;
     }
     public void run() throws Exception{
@@ -25,7 +28,8 @@ public class EchoServer {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ChannelPipeline p = ch.pipeline();
-                            p.addLast(new EchoServerHandler()); //1
+                            p.addLast(new EchoServerV2FirstHandler()); //1
+                            p.addLast(new EchoServerV2SecondHandler());
                         }
                     });
 
@@ -43,6 +47,6 @@ public class EchoServer {
         if (args.length > 0) {
             port = Integer.parseInt(args[0]);
         }
-        new EchoServer(port).run();
+        new EchoServerV2(port).run();
     }
 }
