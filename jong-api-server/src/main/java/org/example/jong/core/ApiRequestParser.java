@@ -86,7 +86,7 @@ public class ApiRequestParser extends SimpleChannelInboundHandler<FullHttpMessag
                 try{
                     service.executeService();
 
-                    apiResult = service.getApiReulst();
+                    apiResult = service.getApiResult();
                 }finally {
                     reqData.clear();
                 }
