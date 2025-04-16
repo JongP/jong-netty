@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.example.jong.core.ApiRequestTemplate;
+import org.example.jong.service.exception.RequestParamException;
+import org.example.jong.service.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;

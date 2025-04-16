@@ -57,6 +57,8 @@ public class ApiRequestParser extends SimpleChannelInboundHandler<FullHttpMessag
     static {
         usingHeader.add("token");
         usingHeader.add("email");
+        usingHeader.add("userNo");
+        usingHeader.add("password");
     }
 
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpMessage msg){

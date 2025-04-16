@@ -4,8 +4,8 @@ import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.example.jong.service.RequestParamException;
-import org.example.jong.service.ServiceException;
+import org.example.jong.service.exception.RequestParamException;
+import org.example.jong.service.exception.ServiceException;
 
 import com.google.gson.JsonObject;
 

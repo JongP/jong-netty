@@ -7,6 +7,8 @@ import org.example.jong.core.ApiRequestTemplate;
 import org.example.jong.core.JedisHelper;
 import org.example.jong.core.KeyMaker;
 import org.example.jong.service.dao.TokenKey;
+import org.example.jong.service.exception.RequestParamException;
+import org.example.jong.service.exception.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
@@ -31,7 +33,7 @@ public class TokenIssue extends ApiRequestTemplate {
     @Override
     public void requestParamValidation() throws RequestParamException {
         if(StringUtils.isEmpty(reqData.get("userNo"))) {
-            throw new RequestParamException("userId is required");
+            throw new RequestParamException("userNo is required");
         }
 
         if(StringUtils.isEmpty(reqData.get("password"))) {

@@ -1,4 +1,4 @@
-package org.example.jong.service;
+package org.example.jong.service.exception;
 
 /**
  * <p>

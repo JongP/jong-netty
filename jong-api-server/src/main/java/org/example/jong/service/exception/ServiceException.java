@@ -1,4 +1,4 @@
-package org.example.jong.service;
+package org.example.jong.service.exception;
 
 public class ServiceException extends Exception {
     private static final long serialVersionUID = -8368700741578891068L;
