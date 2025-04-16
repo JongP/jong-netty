@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ImportResource("classpath:spring/spring/hsqlApplicationContext.xml")
+@ImportResource("classpath:spring/hsqlApplicationContext.xml")
 @ComponentScan(basePackages = "org.example.jong")
 @PropertySource("classpath:api-server.properties")
 public class ApiServerConfig {

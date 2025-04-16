@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jong-api-server" />
         <module name="nettyEdu" />
+        <module name="telnet-server" />
       </profile>
     </annotationProcessing>
   </component>
